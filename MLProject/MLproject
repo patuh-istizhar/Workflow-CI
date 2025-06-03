@@ -1,0 +1,12 @@
+name: Diabetes_Baseline_Model
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      train_path: { type: str, default: "processed_data/train_processed.csv" }
+      test_path: { type: str, default: "processed_data/test_processed.csv" }
+      n_estimators: { type: int, default: 100 }
+      max_depth: { type: int, default: 10 }
+    command: "python modelling.py {train_path} {test_path} {n_estimators} {max_depth}"
