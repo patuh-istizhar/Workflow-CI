@@ -1,0 +1,1 @@
+https://hub.docker.com/repository/docker/patuhio/diabetes_ml_model_serving/general
